@@ -1,0 +1,108 @@
+{
+  "numeric_cols": [
+    "BMI",
+    "SleepHours",
+    "PhysicalHealthDays",
+    "MentalHealthDays"
+  ],
+  "categorical_cols": [
+    "AgeCategory",
+    "Sex",
+    "GeneralHealth",
+    "SmokerStatus",
+    "PhysicalActivities",
+    "AlcoholDrinkers",
+    "HadDiabetes",
+    "HadAngina",
+    "HadStroke",
+    "DifficultyWalking"
+  ],
+  "numeric_median": {
+    "BMI": 27.9,
+    "SleepHours": 7.0,
+    "PhysicalHealthDays": 15.0,
+    "MentalHealthDays": 15.0
+  },
+  "numeric_mean": {
+    "BMI": 28.058533333333337,
+    "SleepHours": 6.986,
+    "PhysicalHealthDays": 15.053833333333333,
+    "MentalHealthDays": 15.080833333333333
+  },
+  "numeric_scale": {
+    "BMI": 5.930509015440599,
+    "SleepHours": 1.444692816253107,
+    "PhysicalHealthDays": 9.014780565210055,
+    "MentalHealthDays": 9.002682894868371
+  },
+  "categorical_most_frequent": {
+    "AgeCategory": "Age 25 to 29",
+    "Sex": "Female",
+    "GeneralHealth": "Good",
+    "SmokerStatus": "Never smoked",
+    "PhysicalActivities": "Yes",
+    "AlcoholDrinkers": "Yes",
+    "HadDiabetes": "No",
+    "HadAngina": "No",
+    "HadStroke": "No",
+    "DifficultyWalking": "No"
+  },
+  "categorical_categories": {
+    "AgeCategory": [
+      "Age 18 to 24",
+      "Age 25 to 29",
+      "Age 30 to 34",
+      "Age 35 to 39",
+      "Age 40 to 44",
+      "Age 45 to 49",
+      "Age 50 to 54",
+      "Age 55 to 59",
+      "Age 60 to 64",
+      "Age 65 to 69",
+      "Age 70 to 74",
+      "Age 75 to 79",
+      "Age 80 or older"
+    ],
+    "Sex": [
+      "Female",
+      "Male"
+    ],
+    "GeneralHealth": [
+      "Excellent",
+      "Fair",
+      "Good",
+      "Poor",
+      "Very good"
+    ],
+    "SmokerStatus": [
+      "Current smoker - now smokes every day",
+      "Current smoker - now smokes some days",
+      "Former smoker",
+      "Never smoked"
+    ],
+    "PhysicalActivities": [
+      "No",
+      "Yes"
+    ],
+    "AlcoholDrinkers": [
+      "No",
+      "Yes"
+    ],
+    "HadDiabetes": [
+      "No",
+      "Yes"
+    ],
+    "HadAngina": [
+      "No",
+      "Yes"
+    ],
+    "HadStroke": [
+      "No",
+      "Yes"
+    ],
+    "DifficultyWalking": [
+      "No",
+      "Yes"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "best_model": "XGBoost",
+  "roc_auc": 0.9508,
+  "tuned_threshold": 0.5852,
+  "recall_target": 0.8,
+  "note": "DEMO artifacts - replace with real dissertation artifacts."
+}
