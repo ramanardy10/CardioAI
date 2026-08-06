@@ -114,9 +114,6 @@ def clinician_pdf(patient, prob, band, threshold, shap_df, recs, meds,
         pdf.set_text_color(*INK)
         pdf.cell(0, 6, _latin("- " + r["title"]), new_x="LMARGIN", new_y="NEXT")
         pdf.body(r["advice"], size=9)
-        pdf.set_font("helvetica", "I", 8)
-        pdf.set_text_color(*MUTE)
-        pdf.multi_cell(0, 4, _latin("Ref: " + r["reference"]["citation"]))
         pdf.ln(1)
 
     if meds:
@@ -128,9 +125,6 @@ def clinician_pdf(patient, prob, band, threshold, shap_df, recs, meds,
             pdf.set_text_color(*INK)
             pdf.cell(0, 6, _latin("- " + m["topic"]), new_x="LMARGIN", new_y="NEXT")
             pdf.body(m["point"], size=9)
-            pdf.set_font("helvetica", "I", 8)
-            pdf.set_text_color(*MUTE)
-            pdf.multi_cell(0, 4, _latin("Ref: " + m["reference"]["citation"]))
             pdf.ln(1)
 
     return bytes(pdf.output())
