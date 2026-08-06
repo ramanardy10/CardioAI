@@ -101,12 +101,12 @@ def history_page():
 
 def guidelines_library():
     theme.hero("Evidence-based guidelines",
-               "The European Society of Cardiology references that anchor "
-               "CardioAI's recommendations.",
+               "The evidence-based rules behind CardioAI's lifestyle "
+               "recommendations.",
                "Guidelines")
     theme.card_open("Lifestyle recommendation rules", "leaf")
     st.markdown('<div class="cai-muted">Each rule fires from a modifiable risk '
-                "factor in the model's inputs and cites its ESC source.</div>",
+                "factor in the model's inputs.</div>",
                 unsafe_allow_html=True)
     for r in guidelines.LIFESTYLE_RULES:
         ref = next(x for x in guidelines.ESC_REFERENCES if x["id"] == r["ref"])
@@ -116,15 +116,6 @@ def guidelines_library():
     theme.card_open("Medication discussion topics (clinician-facing)", "pill")
     for m in guidelines.medication_discussion():
         theme.rec_block(m["topic"], m["point"], m["reference"]["citation"])
-    theme.card_close()
-
-    theme.card_open("Full ESC reference list", "book")
-    for ref in guidelines.ESC_REFERENCES:
-        st.markdown(
-            f'<div class="cai-rec"><b>{ref["id"]}</b>'
-            f'<div class="cai-muted">{ref["citation"]}</div>'
-            f'<div class="cai-ref">DOI: {ref["doi"]}</div></div>',
-            unsafe_allow_html=True)
     theme.card_close()
 
 
