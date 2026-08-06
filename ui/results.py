@@ -36,12 +36,6 @@ def run_and_render(patient, mode, show_meds=False, show_timeline=True,
         st.plotly_chart(charts.risk_gauge(prob, tuned), use_container_width=True,
                         key=f"gauge_{mode}")
         st.markdown(theme.band_badge(band), unsafe_allow_html=True)
-        st.markdown(
-            f'<div class="cai-muted" style="margin-top:10px">Tuned threshold '
-            f'<b>{tuned:.4f}</b> (targets {metrics["recall_target"]:.0%} recall). '
-            f'Standard threshold 0.50. Model: {metrics["model_name"]}, '
-            f'ROC-AUC {metrics["roc_auc"]:.2%}.</div>',
-            unsafe_allow_html=True)
         theme.card_close()
     with right:
         theme.card_open("Why this score (interactive SHAP)", "sparkle")
