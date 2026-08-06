@@ -221,8 +221,7 @@ def loader(text="Running the model"):
 
 
 def rec_block(title, body, ref=None):
-    html = f'<div class="cai-rec"><b>{title}</b><div class="cai-muted">{body}</div>'
-    if ref:
-        html += f'<div class="cai-ref">Reference: {ref}</div>'
-    html += "</div>"
+    # References intentionally not displayed.
+    html = (f'<div class="cai-rec"><b>{title}</b>'
+            f'<div class="cai-muted">{body}</div></div>')
     st.markdown(html, unsafe_allow_html=True)
